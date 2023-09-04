@@ -44,7 +44,7 @@ for i in range(no_of_prev):
     prev_button.click()
 
 #getting breakfast dataset
-breakfast = []
+breakfast = [[]]
 for i in range(len(days)):
     dishes = driver.find_elements(By.CLASS_NAME,'list-group-item')
     breakfast.append(dishes)
@@ -52,7 +52,7 @@ for i in range(len(days)):
             next_button.click()
 
 #getting lunch dataset
-lunch = []
+lunch = [[]]
 next_button.click()
 for i in range(len(days)):
     dishes = driver.find_elements(By.CLASS_NAME,'list-group-item')
@@ -60,7 +60,7 @@ for i in range(len(days)):
     for j in range(len(meal)):
             next_button.click()
 #getting snacks
-snacks = []
+snacks = [[]]
 next_button.click()
 next_button.click()
 for i in range(len(days)):
@@ -69,7 +69,7 @@ for i in range(len(days)):
     for j in range(len(meal)):
             next_button.click()
 #getting dinner
-dinner = []
+dinner = [[]]
 next_button.click()
 next_button.click()
 next_button.click()
@@ -78,6 +78,12 @@ for i in range(len(days)):
     dinner.append(dishes)
     for j in range(len(meal)):
             next_button.click()   
+            
+#try making an algo to get all 4 datasets from a single nested loop
+# breakfast, lunch, snacks, dinner = [[]]
+# for i in range(len(days)):
+#       for j in range(len(meal)):
+#             pass
 
 
 
