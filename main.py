@@ -78,13 +78,16 @@ for i in range(len(days)):
     dinner.append(dishes)
     for j in range(len(meal)):
             next_button.click()   
-            
+
 #try making an algo to get all 4 datasets from a single nested loop
 # breakfast, lunch, snacks, dinner = [[]]
 # for i in range(len(days)):
 #       for j in range(len(meal)):
 #             pass
 
+table = prettytable(
+      
+      )
 
 
 
