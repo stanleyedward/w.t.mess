@@ -5,3 +5,4 @@ make it tabularized and nice
 use snappify for readme.md
 
 https://zetcode.com/python/prettytable/ pretty table tutorial
+https://machinelearningmastery.com/command-line-arguments-for-your-python-script/ command line arguments for python
