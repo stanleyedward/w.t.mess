@@ -8,12 +8,6 @@ URL = "https://whatsinmess.vercel.app/api/get_menu"
 response = requests.get(URL)
 response_json = response.json()
 
-meal = {
-    "Breakfast": 0,
-    "Lunch": 1,
-    "Snacks": 2,
-    "Dinner": 3
-}
 
 days = {
     "Monday": 0,
@@ -30,18 +24,18 @@ with open('data.json', 'w') as f:
     json.dump(response_json, f, indent=4)
 #
 table = PrettyTable(
-    field_names=["Break","Lunch", "snack", "diner"]
+    
 )
+meal_names=["Breakfast", "Lunch", "Snacks", "Dinner"]
 
 
 menu = []
-for meals in meal:
+for meals in meal_names:
     menu.append(response_json['data'][0]['wednesday'][meals])
+
 # print(menu)
-
-# table.add_rows(menu)
+for i in range(4):
+    table.add_column(meal_names[i],menu[i])
+    print(table)
+    table.clear()
 # print(table)
-# print(len(menu))
-table.add_row(menu[1],)
-
-print(table)
