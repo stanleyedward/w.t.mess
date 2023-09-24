@@ -12,22 +12,29 @@ wut.da.mess streamlines your menu-viewing experience.
     ```sh
     git clone https://github.com/stanleyedward/wut_da_mess.git
     ```
-2. open your `.bashrc` file or `.zshrc` if you're using zsh
+2. Install dependencies
+   ```bash
+   cd wut_da_mess | pip install requirements.txt | cd ..
+   ``` 
+3. open your `.bashrc` file or `.zshrc` if you're using zsh
    ```sh
    nano .bashrc
    ```
    ```sh
    nano .zshrc
    ```
-3. add `main.py` as an alias
+4. add `main.py` as an alias
    ```sh
    alias mess="python3 $HOME/wut_da_mess/main.py"
    ```
-   ![swappy-20230924-120129](https://github.com/stanleyedward/wut_da_mess/assets/114278820/1609361c-63a0-45ab-8277-1a40a1f99c34)
+
+![image](https://github.com/stanleyedward/wut_da_mess/assets/114278820/21a27c09-1a1d-4da4-9823-2760bfced1e5)
+
+
 
    
 
-3. Save and exit then,
+5. Save and exit then,
    ```sh
    source ~/.bashrc 
    ```
@@ -37,11 +44,12 @@ wut.da.mess streamlines your menu-viewing experience.
    ```
    or restart the terminal
 
-4. Run the alias cmd
+6. Run the alias cmd
     ```sh
     mess
     ```
-    ![image](https://github.com/stanleyedward/wut_da_mess/assets/114278820/547c45b5-2225-43ca-b695-92b4afc46fc2)
+![swappy-20230924-120015](https://github.com/stanleyedward/wut_da_mess/assets/114278820/74018b97-9e4a-43f9-ac69-98c572570ee5)
+
 
 ### Roadmap
 - [X] Display real-time menu in mess
