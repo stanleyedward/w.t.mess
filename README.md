@@ -52,6 +52,7 @@ wut.da.mess streamlines your menu-viewing experience.
 
 
 ### Roadmap
+- [X] Works offline after first-time run
 - [X] Display real-time menu in mess
 - [ ] Use positional argument to view different meal menus
 - [ ] Able to view different days menus
