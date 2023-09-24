@@ -16,7 +16,7 @@ wut.da.mess streamlines your menu-viewing experience.
     
 2. Install dependencies
    ```bash
-   cd wut_da_mess | pip install requirements.txt | cd ..
+   cd wut_da_mess && pip install requirements.txt && cd ..
    ```
    
 3. open your `.bashrc` file or `.zshrc` if you're using zsh
