@@ -1,6 +1,14 @@
-# wut_da_mess
-wut. da. mess.
-1. Clone the repo to your directory
+### About
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+
+wut.da.mess is a python terminal script.
+With a quick command, you can access your college mess's current menu right in your terminal right from [WhatsInMess](https://whatsinmess.vercel.app/). 
+
+wut.da.mess streamlines your menu-viewing experience.
+
+### Installation
+
+1. Clone the repo to your home directory
     ```sh
     git clone https://github.com/stanleyedward/wut_da_mess.git
     ```
@@ -34,3 +42,9 @@ wut. da. mess.
     mess
     ```
     ![image](https://github.com/stanleyedward/wut_da_mess/assets/114278820/547c45b5-2225-43ca-b695-92b4afc46fc2)
+
+### Roadmap
+- [X] Display real-time menu in mess
+- [ ] Use positional argument to view different meal menus
+- [ ] Able to view different days menus
+
