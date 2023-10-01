@@ -3,12 +3,11 @@ import datetime
 import requests
 import json
 from prettytable import PrettyTable
+import os
+from pathlib import Path
 URL = "https://whatsinmess.vercel.app/api/get_menu"
-
 response = requests.get(URL)
 response_json = response.json()
-
-
 days = {
     "Monday": 0,
     "Tuesday": 1,
@@ -18,10 +17,17 @@ days = {
     "Saturday": 5,
     "Sunday": 6
 }
+data_path = Path("data/")
+if data_path.is_dir():
+    pass
+    # print('alre there')
+else:
+    data_path.mkdir(parents=True,
+                    exist_ok=True)
+    with open(data_path/'data.json', 'w') as f:
+        json.dump(response_json, f, indent=4)
+# if data.json.is_file()
 
-# # 
-with open('data.json', 'w') as f:
-    json.dump(response_json, f, indent=4)
 #
 table = PrettyTable(
     
