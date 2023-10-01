@@ -17,7 +17,7 @@ days = {
     "Saturday": 5,
     "Sunday": 6
 }
-data_path = Path("data/")
+data_path = Path("wt_mess/data/")
 if data_path.is_dir():
     pass
     # print('alre there')
